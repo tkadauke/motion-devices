@@ -14,7 +14,7 @@ For each device, the config file must contain the device's name and ID, like so:
 
 The gem will define tasks for each defined device in all the configuration files that it finds.
 
-## Usage
+## Installation
 
 Install the gem with
 
@@ -27,6 +27,14 @@ Either require the gem from your Rakefile:
 or add it to your Gemfile, if you're using bundler (which you should):
 
     gem 'motion-devices'
+
+## Usage
+
+Once configured, you can leave all your devices plugged in to your computer and easily select the deployment target like this:
+
+    rake device:iphone5
+    rake device:iphone4
+    rake device:ipad
 
 # Forking
 
